@@ -1,0 +1,4 @@
+
+## configure workspace binds
+
+`./binds`

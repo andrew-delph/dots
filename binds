@@ -1,0 +1,46 @@
+#!/bin/bash
+
+# Generate .xbindkeysrc configuration for Ctrl-X to switch workspaces
+cat > ~/.xbindkeysrc <<EOL
+"xdotool set_desktop $(expr $(xdotool get_desktop) - 1)"
+  Control+Left
+
+"xdotool set_desktop $(expr $(xdotool get_desktop) + 1)"
+  Control+Right
+
+"xdotool set_desktop 0"
+  Control+1
+
+"xdotool set_desktop 1"
+  Control+2
+
+"xdotool set_desktop 2"
+  Control+3
+
+"xdotool set_desktop 3"
+  Control+4
+
+"xdotool set_desktop 4"
+  Control+5
+
+"xdotool set_desktop 5"
+  Control+6
+
+"xdotool set_desktop 6"
+  Control+7
+
+"xdotool set_desktop 7"
+  Control+8
+
+"xdotool set_desktop 8"
+  Control+9
+
+"xdotool set_desktop 9"
+  Control+0
+EOL
+
+# Restart xbindkeys to apply changes
+pkill xbindkeys
+xbindkeys &
+
+echo "Keybindings for Ctrl-X to switch workspaces have been applied."
