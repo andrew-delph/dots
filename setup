@@ -1,10 +1,9 @@
 #!/bin/bash
 
 
-ln -s ~/dots/nvim ~/.config/nvim
+[ -d ~/.config/nvim ] || ln -s ~/dots/nvim ~/.config/nvim
 
-
-ln -s ~/dots/zsh ~/.oh-my-zsh/custom
+[ -d ~/.oh-my-zsh/custom ] || ln -s ~/dots/zsh ~/.oh-my-zsh/custom
 
 
 ~/dots/tmux/install.sh
