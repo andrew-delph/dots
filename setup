@@ -1,10 +1,10 @@
 #!/bin/bash
 
 
-ln -s -f ~/dots/nvim/ ~/.config/nvim
+ln -s ~/dots/nvim ~/.config/nvim
 
 
-ln -s -f ~/dots/zsh ~/.oh-my-zsh/custom
+ln -s ~/dots/zsh ~/.oh-my-zsh/custom
 
 
 ~/dots/tmux/install.sh

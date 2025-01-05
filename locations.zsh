@@ -1,0 +1,2 @@
+
+alias dots='cd ~/dots/'
