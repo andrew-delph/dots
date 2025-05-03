@@ -7,6 +7,11 @@ To load custom keybinds call `./binds`
 see https://superuser.com/questions/422381/how-to-autostart-xbindkeys to load binds on startup
 
 
+deps:
+- mise
+- nvim
+- zsh
+
 ## TODO
 
 - add configurations for automatic workspace creation
