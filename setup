@@ -1,9 +1,9 @@
 #!/bin/bash
 
-
 [ -d ~/.config/nvim ] || ln -s ~/dots/nvim ~/.config/nvim
 
-[ -d ~/.oh-my-zsh/custom ] || ln -s ~/dots/zsh ~/.oh-my-zsh/custom
+rm ~/.zshrc
+ln ./zshrc ~/.zshrc
 
 
 ~/dots/tmux/install.sh
