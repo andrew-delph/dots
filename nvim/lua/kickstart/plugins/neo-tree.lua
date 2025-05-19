@@ -29,11 +29,5 @@ return {
             -- more options...
         })
 
-        -- Open Neo-tree by default on startup
-        vim.api.nvim_create_autocmd("VimEnter", {
-            callback = function()
-                vim.cmd("Neotree")
-            end
-        })
     end
 }
