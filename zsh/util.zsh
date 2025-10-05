@@ -1,6 +1,6 @@
 
 # edit configs
-alias edit="nvim ~/dots/zsh; rl"
+alias edit="code ~/dots/zsh"
 alias ezsh="nvim ~/.zshrc"
 alias envim="nvim ~/dots/nvim"
 
@@ -13,3 +13,4 @@ alias tk='tmux kill-session'
 alias tkk='tmux kill-session -t'
 alias ta='tmux attach-session -t'
 alias tl='tmux list-sessions'
+
